@@ -1,0 +1,56 @@
+.horizontal-rotation{
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.intro{
+  width: 100%;
+  height:800px;
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+  background-image: url("../img/1.jpg");
+} 
+
+.logo-img{
+  width:280px;
+  height:80px;
+  position: relative;
+  margin: 0px auto;
+  top:100px;
+  cursor: pointer;
+ }
+
+ .content{
+  width: 100%;
+  height:600px;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+  display: none;
+  background-image: url("../img/5.jpg");
+}
+
+/*canvas {
+	background-image: radial-gradient(#666, #333);
+}
+
+#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}*/
