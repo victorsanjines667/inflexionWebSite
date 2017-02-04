@@ -37,6 +37,7 @@ function init() {
   tl.add(slide.transition(), 0);
   tl.add(slide2.transition(), 0);
 
+
   createTweenScrubber(tl);
 
   window.addEventListener('keyup', function(e) {
@@ -212,6 +213,7 @@ Object.defineProperty(Slide.prototype, 'time', {
 Slide.prototype.setImage = function(image) {
   this.material.uniforms.map.value.image = image;
   this.material.uniforms.map.value.needsUpdate = true;
+  console.log('haber');
 };
 
 Slide.prototype.transition = function() {
@@ -427,5 +429,15 @@ function createTweenScrubber(tween, seekSpeed) {
 
     seek(dx);
     e.preventDefault();
+  });
+
+  $('#idButton').on('click', function () {
+    stop();
+  });
+  $('#prueba').on('click', function () {
+    resume();
+  });
+  $('#prueba2').on('click', function () {
+    resume();
   });
 }

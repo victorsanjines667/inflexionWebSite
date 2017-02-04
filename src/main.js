@@ -119,7 +119,7 @@ function obj(src){
       setTimeout(function () {
         $('#intro').hide();
         $('#content').show();
-      }, 12000);
+      }, 14000);
 	}
     this.reset = function(){
         console.log($("#"+this.id).children().length);
@@ -138,12 +138,6 @@ $(function(){
     setTimeout(function() {
       img.explode('img');
     }, 2000);
-    // $('#button').click(function() {
-    //     var src_img2 = "./assets/img/monoCabezaFinal.png";
-    //     img2 = new obj(src_img2);
-    //     img2.explode('img2');
-    //     img.explode('img');
-    // });
 }); 
 
 function getRandom(min, max) {  

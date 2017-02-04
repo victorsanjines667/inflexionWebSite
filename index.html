@@ -33,7 +33,7 @@
 	<div id="prueba" style="display: inline-block;" class="horizontal-rotation">
 		<img src="assets/img/rightArrow.png" width="90px;" height="60px">
 	</div>
-	<div style="display: inline-block;">
+	<div id="prueba2" style="display: inline-block;">
 		<img src="assets/img/rightArrow.png" width="90px;" height="60px">
 	</div>
 	
@@ -44,18 +44,23 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- GSAP -->
+    <script src="assets/js/three.min.js"></script>
     <script src="vendor/gsap/src/minified/TimelineMax.min.js"></script>
     <script src="vendor/gsap/src/minified/TweenMax.min.js"></script>
-    <!--<script src="assets/js/three.min.js"></script>-->
+    <!--<script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>-->
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
+
     <script src="src/main.js"></script>
-    <!--<script src="src/main2.js"></script>-->
+    <script src="src/main2.js"></script>
 
     <script type="text/javascript">
     	$('#idButton').on('click', function () {
-    		alert('funca');
+    		console.log('funca');
     	});
     	$('#prueba').on('click', function () {
-    		alert('soiiiii');
+    		console.log('soiiiii');
     	});
     </script>
 </body>
