@@ -1,67 +1,394 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Inflexion - website</title>
-	<!-- Bootstrap Core CSS -->
+<!doctype html>
+
+<html lang="en">
+
+  
+
+  <head>
+  
+  
+      <!-- META -->
+      <meta charset="utf-8">
+      <meta name="robots" content="noodp">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      
+      
+      <!-- PAGE TITLE -->
+      <title>Inflexion - Website</title>
+      
+      
+      <!-- FAVICON -->
+      <link rel="shortcut icon" href="assets/images/inflexion.ico">
+      
+      
+      <!-- GOOGLE FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600%7CRaleway:300,400" rel="stylesheet">
+      
+      
+      <!-- STYLESHEETS -->
+      <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/hero.css">
+
+      <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<div class="container">
-		<div id="intro" class="intro">
-			<div id="mccText" class="logo-img">
-				
-			</div>
-		</div>
-		<div class="head">
-			
-		</div>
-		<div id="content" class="content">
-			
-		</div>
-	</div>
-	<div id="three-container"></div>
-	<p><h1>prueba</h1></p>
-	<button id="idButton" class="btn btn-primary">Hola</button>
-	<p></p>
-	<div id="prueba" style="display: inline-block;" class="horizontal-rotation">
-		<img src="assets/img/rightArrow.png" width="90px;" height="60px">
-	</div>
-	<div id="prueba2" style="display: inline-block;">
-		<img src="assets/img/rightArrow.png" width="90px;" height="60px">
-	</div>
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/principal.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style3.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/modernizr.custom.js"></script>    
+            
+  </head>
+  
+  
+  
+  <body>
+  
+     
+     
+      <!-- MAIN -->
+      <div id="main">
+              
+              
+              
+          <!-- LOADING -->
+		  <div id="page-loader">
+
+
+			  <!-- SPINNER CONTAINER -->
+			  <div class="spinner-container">
+
+				  <div class="css-spinner"></div>
+
+			  </div>
+			  <!-- /SPINNER CONTAINER -->
+
+
+		  </div>
+		  <!-- /LOADING -->   
+              
+             
+               
+		  <!-- HERO -->
+		  <section id="hero" class="hero hero-1">
+		  		
+			  <!-- FRONT CONTENT -->
+			  <div class="front-content page-enter-animated">
+			 
+				  <!-- CONTAINER MID -->
+				  <div class="container-mid">
+
+				  	  	<img class="logo" src="assets/images/mccLetrasFinal.png" alt="logo">
+				  	 
 	
-	<!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+					  <div class="os-phrases" id="os-phrases">
+							<h2>Preparate</h2>
+							<h2>para despegar</h2>
+							 <h2>INFLEXION</h2>
+					  </div>
+					  <!-- <div style="padding-top: 10px;">
+					  	<p id="textoIdioma" style="font-size: 20px;">ELIGE UN IDIOMA</p>
+					  </div> -->
+					  <p></p>
+					  <p></p>
+					  <p></p>
+					  <div></div>
+					  <div style="height: 80%; display: none;"></div>
+					  
+					  	<div class="lenguajeSelect">
+					  	<select id="idLanguage" class="dropChoose">
+							  	<option value="es">Español</option>
+							  	<!-- <option value="en">Inglés</option>
+							  	<option value="pr">Portugués</option> -->
+							  </select>
+					  	</div>
+					  
+					  <br>
+					   <div id ="btnIngresar" class="open-overlay down-button intro" > 
+					  		  <span id="ingresar" style="font-size: 20px;">INGRESAR</span>
+					  </div>
+					
+	
+				  </div>
+				  <!-- /CONTAINER MID -->
+
+				  <!-- CONTROLS -->
+				  <div class="controls">
+
+					  <i class="volume-button fa fa-volume-up"></i>
+					  <i class="pause-button ti-control-pause"></i>   
+
+				  </div>
+				  <!--/ CONTROLS -->
+
+
+
+			  </div>
+			  <!-- /FRONT CONTENT -->
+
+			  <!-- BACKGROUND CONTENT -->
+			  <div class="background-content page-enter-animated">
+
+
+				  <!-- LEVEL 1 -->
+				  <div class="level-1">
+
+
+					  <div class="bg-overlay"></div>
+					  <div class="bg-pattern"></div>
+					  <div id="canvas" class="layer"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
+
+
+				  </div>
+				  <!-- /LEVEL 1 -->
+
+
+				  <!-- LEVEL 2 -->
+				  <div class="level-2">
+
+
+					  <div class="bg-image layer" data-depth="0.04"></div>
+					  <div class="bg-video layer" data-depth="0.04"></div>
+					  <div class="bg-color layer" data-depth="0.04"></div>
+
+
+				  </div>
+				  <!-- /LEVEL 2 -->
+
+
+			  </div>
+			  <!-- /BACKGROUND CONTENT -->
+
+
+		  </section>
+		  <!-- /HERO -->
+		  <!-- section with the background 1 of th page -->
+		  <figure class="logo_mccGames">
+		   		<img class="cabeza_mono" src="assets/images/monoCabezaFinal.png" alt="Mcc Games">
+		   </figure>
+		  <section id="principal">
+		  	<div id="fondoPrincipal">
+		  		<img id="fondo1" src="assets/images/03fondoIzquierdo.png">
+		  		<img id="fondo2" src="assets/images/02fondoDerecho.png" class="top">
+		  		<img id="fondo3" src="assets/images/01fondoPrincipal.png" class="top">
+		  		<img id="fondo4" src="assets/images/04fondoTrasero.png" class="top">
+		  		<!-- <canvas id="inflexion" width="2000" height="2000">
+		  		</canvas> -->
+		  	</div>
+		  	<div id="fondoNegro" style="display: none;">
+		  		
+		  	</div>
+		  	<div class="perfil" style="display: none;">
+		  		<img class="pergamino" src="assets/images/17fondoPapelViejo.png">
+		  		<img class="model_sofia" src="assets/images/modelsheetSofia.png">
+		  		<img class="mono" style="display: none;" src="assets/images/mccLetrasFinal.png">
+		  		<img class="rock_mono" style="display: none;" src="assets/images/rockMcc.png">
+		  		<img class="x" src="assets/images/X.png">
+		  		<h2 class="cabecera_perfil">SOFIA</h2>
+		  		<h3 class="cabecera_mcc" style="display: none;">INDIE GAME STUDIO.</h3>
+		  		<div class="texto_perfil">	
+		  			<p>Adolescente desaparecida.</p>
+					<p>La menor de edad, desaparecio el pasado viernes 20 de enero de 2017, a horas 13 aproximadamente, cuando se dirigia a su domicilio en la zona de XXX, fue vista por ultima vez en inmediaciones de su colegio YYY.</p>
+					<p>En caso de tener algun dato sobre la adolescente desaparecida, comuniquese con los numeros 120 PAC y 110 Radio Patrullas.</p>
+					<p>Sofia, tu familia te ama y te esperamos en casa, regresa.</p>
+					<p>"Recuerde que la tenencia ilegal del niño, niña y adolescente esta penado por Ley"</p>	  			
+		  		</div>
+		  		<div class="texto_mcc" style="display: none;">
+		  			<p>ARTE | ANIMACION | DISEÑO | MUSICA | PROGRAMACION</p>
+					<p>MAS INFORMACION: www.mcc-games.com</p>
+		  		</div>
+		  	</div>
+		  	<!-- elementos del primer escenario-->
+		  	<p class="letrero" style="display: none;">
+		  		INFLEXION
+		  	</p>
+		  	<span id="clock" style="display: none;"></span>
+		  	<figure class="poste_luz" style="display: none;">
+		  			<img src="assets/images/06posteLuz.png" alt="poste luz">
+		  		</figure>
+		  	<div class="sofia" style="display: none">
+		  		<figure class="sofi">
+		  			<img src="assets/images/08cartelSofia.png" alt="sofia">
+		  		</figure>
+		  	</div>
+		  	<figure class="flecha_derecha" style="display: none;">
+		  		<img src="assets/images/11flechaDerecha.png" alt="flecha derecha">
+		  	</figure>
+		  	<figure class="flecha_izquierda" style="display: none;">
+		  		<img src="assets/images/12flechaIzquierda.png" alt="flecha izquierda">
+		  	</figure>	
+		  	<figure class="cartel_ana" style="display: none;">
+		  		<img src="assets/images/09cartelAna.png" alt="ana">
+		  	</figure>
+		  	<figure class="cartel_luis" style="display: none;">
+		  		<img src="assets/images/10cartelDesaparecidoOld.png">
+		  	</figure>
+		  	<!-- fin elementos del primer escenario-->
+		  	
+		  	<!-- elementos del segundo escenario-->
+		  	<!-- <figure class="cartel_auspicio" style="display: none;">
+		  		<img class="viva" src="assets/images/posteAuspicio.png">
+		  	</figure> -->
+		  	<figure class="cartel_viva" style="display: none;">
+		  		<img src="assets/images/viva.png">
+		  	</figure>
+		  	<figure class="auspicios" style="display: none;">
+		  		<img src="assets/images/auspicios.png">
+		  	</figure>
+		  	<figure class="flecha_derecha3" style="display: none;">
+		  		<img src="assets/images/11flechaDerecha.png" alt="flecha derecha">
+		  	</figure>
+		  	<figure class="flecha_izquierda3" style="display: none;">
+		  		<img src="assets/images/12flechaIzquierda.png" alt="flecha izquierda">
+		  	</figure>
+		  	
+		  	<!-- fin elementos del segundo escenario-->
+
+		  	<!-- elementos del tercer escenario -->
+		  	<figure class="cartel_mcc" style="display: none;">
+		  		<img src="assets/images/13cartelMcc.png" alt="Mcc-Games">
+		  	</figure>
+		  	<figure class="flecha_derecha2" style="display: none;">
+		  		<img src="assets/images/11flechaDerecha.png" alt="flecha derecha">
+		  	</figure>
+		  	<figure class="flecha_izquierda2" style="display: none;">
+		  		<img src="assets/images/12flechaIzquierda.png" alt="flecha izquierda">
+		  	</figure>
+		  	<figure class="cartel_google" style="display: none;">
+		  		<img src="assets/images/14googlePlay.png">
+		  	</figure>
+		  	<figure class="cartel_apple" style="display: none;">
+		  		<img src="assets/images/15apple.png">
+		  	</figure>
+		  	<figure class="cartel_steam" style="display: none;">
+		  		<img src="assets/images/16steam.png">
+		  	</figure>
+		  	<!-- fin elementos del tercer escenario -->
+
+		  	<!-- elementos del cuarto escenario -->
+		  	<figure class="flecha_derecha4" style="display: none;">
+		  		<img src="assets/images/11flechaDerecha.png" alt="flecha derecha">
+		  	</figure>
+		  	<figure class="flecha_izquierda4" style="display: none;">
+		  		<img src="assets/images/12flechaIzquierda.png" alt="flecha izquierda">
+		  	</figure>
+		  	<video class="video" style="display: none;">
+			  	<source src="assets/videos/inflexion.mp4" type="video/mp4">
+			</video>
+		  	<!-- fin elementos del cuarto escenario -->
+		  </section>
+
+
+		  <!-- OVERLAY CONTAINER -->    
+		  <div id="overlay">
+
+
+			  <!-- OVERLAY-1 -->
+			  <section class="overlay-1">
+
+
+				  <!-- CONTENT -->
+				  <div id="about" class="content">
+
+
+					  <!-- CONTAINER MID -->
+					  <div class="container-mid">
+
+
+						  <!-- CONTAINER -->
+						  <div class="container">
+
+
+							  <!-- <h1>COMING SOON</h1>
+
+							  <p>
+							  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+							  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+							  pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+							  vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+							  Nullam dictum felis eu pede mollis pretium. 
+							  Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+							  Aenean leo ligula, porttitor eu,            
+							  </p> -->
+
+							  <!-- SOCIAL LINKS -->
+							  <ul class="social-icons">
+
+
+								  <li><a data-placement="bottom" title="Facebook" class="ti-facebook" href="#"><div class="overlay"></div></a></li>
+								  <li><a data-placement="bottom" title="Twitter" class="ti-twitter-alt" href="#"><div class="overlay"></div></a></li>
+								  <li><a data-placement="bottom" title="Google+" class="ti-google" href="#" ><div class="overlay"></div></a></li>
+								  <li><a data-placement="bottom" title="Contact" class="fa fa-envelope go-down" href="#"><div class="overlay"></div></a></li>
+
+
+							  </ul>
+							  <!-- /SOCIAL LINKS -->
+
+
+						   </div>
+						   <!-- /CONTAINER -->
+
+
+					  </div>
+					  <!-- /CONTAINER MID -->
+
+
+				  </div>
+				  <!-- /CONTENT -->
+
+
+			  </section>
+			  <!-- /OVERLAY-1 -->
+
+			  <!-- OVERLAY BACK BUTTON --> 
+			  <div class="up-button go-up"><i class="ti-arrow-up"></i><i class="ti-arrow-up"></i></div>
+			  <!-- /OVERLAY BACK BUTTON -->  
+			  
+		  
+		  </div>
+		  <!-- /OVERLAY CONTAINER --> 
+          
+          
+          
+      </div>
+      <!-- MAIN -->
+      
+      
+      <!-- jQuery -->
+    	<script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- GSAP -->
-    <script src="assets/js/three.min.js"></script>
-    <script src="vendor/gsap/src/minified/TimelineMax.min.js"></script>
-    <script src="vendor/gsap/src/minified/TweenMax.min.js"></script>
-    <!--<script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>-->
-	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
-	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
+    	<script src="assets/js/three.min.js"></script>
+    	<script src="vendor/gsap/src/minified/TimelineMax.min.js"></script>
+    	<script src="vendor/gsap/src/minified/TweenMax.min.js"></script>
+      <!-- JAVASCRIPT FILES -->
+      <script type="text/javascript" src="assets/js/plugins/plugins.js"></script>
+      <script type="text/javascript" src="assets/js/config.js"></script>
+      <script type="text/javascript" src="assets/js/scripts.js"></script>
+      <script type="text/javascript" src="assets/js/hero.js"></script>
+      <script type="text/javascript" src="assets/js/smoke.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
 
-    <script src="src/main.js"></script>
-    <script src="src/main2.js"></script>
+      <script src="assets/js/jquery.lettering.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.transitions.js"></script>
+      <script type="text/javascript" src="src/app.js"></script>
+		<script>
+			
+		</script>
+      
+      
+      
+  </body>
 
-    <script type="text/javascript">
-    	$('#idButton').on('click', function () {
-    		console.log('funca');
-    	});
-    	$('#prueba').on('click', function () {
-    		console.log('soiiiii');
-    	});
-    </script>
-</body>
+
+
 </html>
